@@ -11,4 +11,4 @@ gcloud builds submit --timeout="15m" \
     --substitutions=_REPO="${REPO}",_TGT_IMG="${TGT_IMG}" .
 
 # docker image rm $TGT_IMG -f
-# docker run $TGT_IMG script.R $PROJECT_ID negocio.scoring-web
+# docker run $TGT_IMG script.R $PROJECT_ID negocio.scoring_web

@@ -88,3 +88,7 @@ POST https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-01-11b2680872f5
     "enableIntegrityMonitoring": true
   }
 }
+
+library(bigrquery)
+bq_auth(scopes = "https://www.googleapis.com/auth/bigquery")
+query_exec('select * from negocio.scoring_web', 'qwiklabs-gcp-00-ef786800f968', use_legacy_sql = FALSE)
