@@ -1,8 +1,0 @@
-steps:
-- name: gcr.io/cloud-builders/gcloud
-  args: ['source', 'repos', 'clone', '$_REPO']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', '$_TGT_IMG', '.']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', '$_TGT_IMG']
-images: ['$_TGT_IMG']
