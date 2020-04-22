@@ -22,12 +22,10 @@ export PARAM_SCRIPT=$PARAM_SCRIPT
 export PARAM_PROJECT_ID=$PARAM_PROJECT_ID
 export PARAM_DATASET_TABLE=$PARAM_DATASET_TABLE
 
-echo HOLA_1 >>log
-sudo gcloud source repos clone $PARAM_REPO --project=$PARAM_PROJECT_ID >>log 2>&1
-echo HOLA_2 >>log
+echo HOLA_1 >>/instance_log
+sudo gcloud source repos clone $PARAM_REPO --project=$PARAM_PROJECT_ID >>/instance_log 2>&1
+echo HOLA_2 >>/instance_log
 cd $PARAM_REPO
-sudo Rscript --vanilla $PARAM_SCRIPT $PARAM_PROJECT_ID $PARAM_DATASET_TABLE  >>log 2>&1
-echo HOLA_3 >>log
+sudo Rscript --vanilla $PARAM_SCRIPT $PARAM_PROJECT_ID $PARAM_DATASET_TABLE  >>/instance_log 2>&1
+echo HOLA_3 >>/instance_log
 "
-
-# gcloud source repos clone scoring-web --project=qwiklabs-gcp-03-2da9555533b6
