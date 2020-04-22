@@ -15,4 +15,3 @@ gcloud compute instances create-with-container $VM_NAME \
     --container-arg="$PROJECT_ID" \
     --container-arg="negocio.scoring_web" \
     --scopes=default,bigquery
-
