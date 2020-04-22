@@ -4,12 +4,12 @@ FROM SRC_IMG
 RUN mkdir -p /repo
 
 # Copy model and entrypoint
-COPY entrypoint.sh /repo
+COPY entrypoint.sh /
 COPY REPO/ /repo
 
 # Make entrypoint executable
-RUN ["chmod", "+x", "/repo/entrypoint.sh"]
+RUN chmod +x /entrypoint.sh
 
 WORKDIR /repo
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
