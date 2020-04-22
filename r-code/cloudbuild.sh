@@ -27,5 +27,5 @@ git push -u origin master
 
 
 bq mk -d negocio
-bq mk -t negocio.scoring_web fecha:TIMESTAMP,url:STRING
-cat scoring_web.sql | bq query 
+bq mk -t negocio.scoring_web fecha:timestamp,url:string
+bq load negocio.scoring_web  scoring_web.csv fecha:timestamp,url:string
