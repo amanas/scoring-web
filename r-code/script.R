@@ -25,17 +25,17 @@ tryCatch(
         df
     },
     error=function(cond) {
-        message("Error:")
+        print("Error:")
         message(cond)
         return(NA)
     },
     warning=function(cond) {
-        message("Warning:")
+        print("Warning:")
         message(cond)
         return(NULL)
     },
     finally={
-        message("OK")
+        print("Done!")
     }
 )  
 
