@@ -16,7 +16,8 @@ tryCatch(
         sql <- paste("select * from", dataset_table)
         df <- query_exec(sql, project_id, use_legacy_sql = FALSE)
         print("Result")
-        df
+        print(df)
+        write.csv(df, file="script.out")
     },
     error=function(cond) {
         print("Error:")

@@ -12,3 +12,5 @@ gcloud compute instances create $IMG_NAME \
 gcloud beta compute machine-images create $IMG_NAME \
     --source-instance $IMG_NAME \
     --source-instance-zone $ZONE
+
+gcloud compute instances delete $IMG_NAME --zone $ZONE --quiet    
