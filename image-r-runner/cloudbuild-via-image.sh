@@ -1,3 +1,5 @@
+#! /bin/bash
+
 IMG_NAME="r-runtime"
 VM_NAME="run-scoring-web"
 ZONE="europe-west1-b"

@@ -1,3 +1,5 @@
+#! /bin/bash
+
 MODEL="scoring-web" 
 PROJECT_ID=$DEVSHELL_PROJECT_ID
 IMAGE="gcr.io/${PROJECT_ID}/r-model-${MODEL}"

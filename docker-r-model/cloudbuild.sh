@@ -1,3 +1,5 @@
+#! /bin/bash
+
 REPO="scoring-web" 
 PROJECT_ID=$DEVSHELL_PROJECT_ID
 SRC_IMG="gcr.io/${PROJECT_ID}/r-runtime"

@@ -1,12 +1,4 @@
-# gcloud init
-# gcloud source repos clone scoring-web --project=$DEVSHELL_PROJECT_ID
-# git config --global user.email "andresmanasmanas@gmail.com"
-# git config --global user.name "Andrés Mañas"
-# scoring-web
-# git add .
-# git commit -m "go"
-# git push -u origin master
-
+#! /bin/bash
 
 export REPO=scoring-web 
 

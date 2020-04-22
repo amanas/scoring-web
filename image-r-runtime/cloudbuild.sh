@@ -1,3 +1,5 @@
+#! /bin/bash
+
 IMG_NAME="r-runtime"
 VM_NAME="r-model"
 ZONE="europe-west1-b"
