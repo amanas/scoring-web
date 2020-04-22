@@ -1,0 +1,11 @@
+print("Greetings!")
+print("Greetings!")
+print("Greetings!")
+print("Greetings!")
+print("Greetings!")
+print("Greetings!")
+print("Greetings!")
+
+print("Parámetros")
+args<-commandArgs(trailingOnly = TRUE)
+print(args)
