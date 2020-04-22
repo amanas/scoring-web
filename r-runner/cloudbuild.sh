@@ -9,8 +9,8 @@ ZONE="europe-west1-b"
 gcloud compute instances create-with-container $VM_NAME \
     --zone $ZONE \
     --container-image $IMAGE \
-    --container-restart-policy=never \
-    --container-command="Rscript" \
+    --container-arg="Rscript" \
+    --container-arg="--vanilla" \
     --container-arg="script.R" \
     --container-arg="$PROJECT_ID" \
     --container-arg="negocio.scoring_web" \
