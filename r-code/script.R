@@ -10,14 +10,12 @@ print("Parámetros")
 args<-commandArgs(trailingOnly = TRUE)
 print(args)
 
-print("Loading the library")
-library(bigrquery)
-
-
 tryCatch(
     {            
+        print("Loading the library")
+        library(bigrquery)
         print("Authenticating")
-        bq_auth()
+        bq_auth(scopes = "https://www.googleapis.com/auth/bigquery")
         print("Querying")
         projectid <- args[1]
         table <- args[2]

@@ -9,7 +9,7 @@ ZONE="europe-west1-b"
 gcloud compute instances create-with-container $VM_NAME \
     --zone $ZONE \
     --container-image $IMAGE \
-    --container-arg="greetings.R" \
+    --container-arg="script.R" \
     --container-arg="$PROJECT_ID" \
     --container-arg="negocio.scoring_web" \
     --scopes=default,bigquery
