@@ -25,3 +25,7 @@ git add .
 git commit -m "go"
 git push -u origin master
 
+
+bq mk -d negocio
+bq mk -t negocio.scoring_web fecha:TIMESTAMP,url:STRING
+cat scoring_web.sql | bq query 
