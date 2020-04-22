@@ -16,6 +16,9 @@ RUN export DEBIAN_FRONTEND=noninteractive; apt-get -y update \
     curl
     
 # Setup R configs
-RUN ["install2.r", "readr", "googleCloudStorageR", "bigrquery", "lubridate", "Rcpp", "digest", "crayon", "withr", "mime", "R6", "jsonlite", "xtable", "magrittr", "httr", "curl", "testthat", "devtools", "hms", "dplyr", "httpuv", "memoise", "htmltools", "openssl", "tibble", "remotes", "data.table", "xts"]
+RUN ["install2.r", "readr", "googleCloudStorageR", "bigrquery", "lubridate", "Rcpp"]
+RUN ["install2.r", "digest", "crayon", "withr", "mime", "R6", "jsonlite", "xtable"]
+RUN ["install2.r", "magrittr", "httr", "curl", "testthat", "devtools", "hms", "dplyr"]
+RUN ["install2.r", "httpuv", "memoise", "htmltools", "openssl", "tibble", "remotes", "data.table", "xts"]
 
 CMD ["R"]
