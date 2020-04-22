@@ -8,4 +8,4 @@ COPY REPO/ /repo
 
 WORKDIR /repo
 
-RUN ["R"]
+ENTRYPOINT ["Rscript"]
