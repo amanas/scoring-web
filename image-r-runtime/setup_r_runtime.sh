@@ -10,4 +10,4 @@ sudo apt-get install -y \
     r-base >>/image_log 2>&1
     
 
-sudo Rscript -e "install.packages(c('bigrquery'), repos='http://cran.us.r-project.org')" >>/image_log 2>&1
+sudo Rscript -e "install.packages(c('readr','bigrquery'), repos='http://cran.us.r-project.org')" >>/image_log 2>&1

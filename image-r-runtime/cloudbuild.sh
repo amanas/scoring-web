@@ -9,9 +9,9 @@ gcloud compute instances create $VM_NAME \
     --scopes=default,bigquery \
     --metadata-from-file startup-script=setup_r_runtime.sh
 
-echo "sleep 300s untill everything is installed"
+echo "sleep 30 mins untill everything is installed"
 
-sleep 300
+sleep 1800
 
 gcloud beta compute machine-images create $IMG_NAME \
     --source-instance $VM_NAME \

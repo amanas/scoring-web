@@ -22,6 +22,8 @@ export PARAM_SCRIPT=$PARAM_SCRIPT
 export PARAM_PROJECT_ID=$PARAM_PROJECT_ID
 export PARAM_DATASET_TABLE=$PARAM_DATASET_TABLE
 
+sudo Rscript -e \"install.packages(c('readr'), repos='http://cran.us.r-project.org')\" >>/image_log 2>&1
+
 echo HOLA_1 >>/instance_log
 sudo gcloud source repos clone $PARAM_REPO --project=$PARAM_PROJECT_ID >>/instance_log 2>&1
 echo HOLA_2 >>/instance_log
